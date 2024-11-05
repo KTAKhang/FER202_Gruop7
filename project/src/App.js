@@ -1,23 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./App.css";
+import "bootstrap/dist/css/bootstrap.min.css";
+import { Route, Routes } from "react-router-dom";
 
+
+import LTToan from "./pages/LTToan";
+import Home from "./pages/Home";
+
+import TienCV from "./pages/TienCV";
+import Vinh from '../src/pages/Vinh'
+import Tuananh from "./pages/Tuananh";
+import ThanhDat from "./pages/ThangDat";
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {/* <Header/> */}
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/lttoan" element={<LTToan />} />
+        <Route path="/dat" element={<ThanhDat />} />
+        <Route path="/lcta" element={<Tuananh />} />
+        <Route path="/tien" element={<TienCV />} />
+        <Route path="/vinh" element={<Vinh />} />
+      </Routes>
     </div>
   );
 }
