@@ -122,7 +122,9 @@ body {
 }
 
 .container .box .body .content .bg-red {
-    background: linear-gradient(45deg, #ff1b6b, #45caff) !important;
+    background: linear-gradient(135deg, #ff4500, #ff8c00, #ff1b6b) !important;
+    /* Adding a glow effect for extra impact */
+    box-shadow: 0 0 15px rgba(255, 69, 0, 0.6), 0 0 25px rgba(255, 140, 0, 0.6);
 }
 
 .container .box .body .content .bg-blue {
@@ -133,9 +135,49 @@ body {
     background: linear-gradient(45deg, #9d80cb, #f7c2e6) !important;
 }
 
-.text-color-tien {
-    color: #210cae;
+/* General styling for text content */
+.content.gundam-content h3 {
+    font-size: 1.8rem;
+    color: #ffffff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+    letter-spacing: 1px;
 }
+
+.content.gundam-content p {
+    font-size: 1.2rem;
+    color: #ffffff;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+/* Base style for the "Learn More" link */
+.text-color-gundam {
+    font-size: 1.1rem;
+    /* Slightly smaller font size */
+    color: hsl(0, 0%, 100%);
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 6px 12px;
+    /* Smaller padding for a more compact look */
+    text-shadow: 0 0 5px rgba(255, 215, 0, 0.7), 0 0 8px rgba(255, 215, 0, 0.4);
+    border: 1.5px solid rgba(255, 215, 0, 0.7);
+    /* Slightly thinner border */
+    border-radius: 6px;
+    /* Subtler rounding */
+    transition: color 0.3s, transform 0.3s, background-color 0.3s, box-shadow 0.3s;
+    position: relative;
+}
+
+/* Glowing hover effect */
+.text-color-gundam:hover {
+    color: #ffffff;
+    background-color: rgba(255, 215, 0, 0.15);
+    /* Softer background glow */
+    box-shadow: 0 0 10px rgba(255, 215, 0, 0.7), 0 0 15px rgba(255, 215, 0, 0.5);
+    border-color: #ffffff;
+    transform: scale(1.05);
+    /* More subtle scaling */
+}
+
 
 .text-kiet {
     color: #f7f779;

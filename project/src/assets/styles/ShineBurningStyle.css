@@ -1,0 +1,206 @@
+/* Tổng thể nền của trang */
+.shine-body {
+    background: url('../images/Shin/bg.jpg') no-repeat center center fixed;
+    background-size: cover;
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header */
+header {
+    background-color: #333;
+    padding: 20px;
+    text-align: center;
+    font-size: 2em;
+    color: #fff;
+}
+
+/* Carousel */
+.shine-carousel {
+    width: 80%;
+    margin: 30px auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+}
+
+.shine-carousel .carousel-item img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    object-position: center center;
+}
+
+/* Container chung */
+.shine-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* Căn giữa các phần tử theo chiều ngang */
+    justify-content: center;
+    /* Căn giữa các phần tử theo chiều dọc */
+    flex: 1;
+    padding: 30px;
+    width: 100%;
+    /* Đảm bảo chiếm toàn bộ chiều rộng */
+    text-align: center;
+    /* Căn giữa nội dung text */
+}
+
+/* Tiêu đề chính */
+.shin-name h1 {
+    font-size: 3em;
+    text-align: center;
+    color: #f39c12;
+    text-shadow: 2px 2px 10px rgba(255, 0, 0, 0.6);
+}
+
+.shin-name ul {
+    list-style: none;
+    padding: 0;
+    font-size: 1.2em;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.shin-name ul li span {
+    list-style: none;
+    font-weight: bold;
+    color: #f39c12;
+    text-align: center;
+}
+
+.shin-name ul li {
+    list-style: none;
+    margin: 10px 0;
+    text-align: center;
+}
+
+/* Thông tin Gundam */
+.shine-info,
+.shine-intro,
+.shine-skills,
+.shine-experience {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 30px;
+    width: 80%;
+    text-align: center;
+}
+
+.shine-info h2,
+.shine-intro h2,
+.shine-skills h2,
+.shine-experience h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #f39c12;
+}
+
+/* Danh sách các đặc điểm */
+.shine-intro ul,
+.shine-skills ul,
+.shine-experience ul {
+    list-style-type: disc;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.shine-intro ul li,
+.shine-skills ul li,
+.shine-experience ul li {
+    list-style: none;
+    font-size: 1.1em;
+    margin: 5px 0;
+}
+
+/* Container chứa hình ảnh shop */
+.shop-image-container {
+    position: relative;
+    text-align: center;
+    width: 100%;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    /* Hiệu ứng bóng */
+}
+
+.shop-image-container img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+/* Căn chỉnh nút 'View Shop' bên dưới hình ảnh */
+.text-center a.btn-primary {
+    background-color: #f39c12;
+    /* Màu cam cho nút */
+    color: #fff;
+    font-size: 1.1em;
+    font-weight: bold;
+    padding: 12px 20px;
+    border-radius: 5px;
+    border: none;
+    text-decoration: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    margin-top: 20px;
+    /* Thêm khoảng cách giữa nút và ảnh */
+}
+
+.text-center .btn-primary::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 300%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.2);
+    transform: skewX(-30deg);
+    transition: 0.5s;
+}
+
+.text-center .btn-primary:hover::before {
+    left: 100%;
+}
+
+.text-center .btn-primary:hover {
+    background-color: #d98a0c;
+    /* Màu cam đậm hơn khi hover */
+    transform: scale(1.05);
+    /* Phóng to nhẹ khi hover */
+    box-shadow: 0px 4px 15px rgba(243, 156, 18, 0.6);
+    /* Hiệu ứng phát sáng */
+}
+
+/* Phần Footer */
+footer {
+    background-color: #333;
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+}
+
+footer .footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer .footer-container p {
+    margin: 10px 0;
+}
+
+footer .footer-container .social-links a {
+    font-size: 1.5em;
+    margin: 0 10px;
+    color: #f39c12;
+}
+
+footer .footer-container .social-links a:hover {
+    color: #fff;
+}
