@@ -27,7 +27,7 @@ function ShineBurning() {
   const gundamInfo = {
     series: "Mobile Suit Gundam Build Fighters Try",
     modelNumber: "SBG-E01",
-    manufacturer: "Sekai Kamiki",
+    manufacturer: "Gunpla Battle Association or Build Fighters Organization",
     pilot: "Sekai Kamiki",
     affiliation: "Try Fighters Team",
     origin: "Gunpla Battle Universe",
@@ -213,7 +213,7 @@ function ShineBurning() {
               </div>
               {/* Button to navigate to the shop */}
               <div className="text-center mt-3">
-                <a href="http://localhost:8080" className="btn btn-primary">View Shop</a>
+                <a href="/shin-burning-detail" className="btn btn-primary">View Shin Burning Gundam In Shop</a>
                 {/* Thay `/shop` bằng đường dẫn thực tế của trang shop */}
               </div>
             </div>

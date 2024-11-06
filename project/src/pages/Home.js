@@ -60,21 +60,20 @@ function Home() {
             </div>
           </div>
         </div>
-
         <div className="box">
           <div className="body">
             <div className="imgContainer">
               <img
                 src={img1}
-                alt=""
+                alt="Shin Burning Gundam"
               />
             </div>
             <div className="content gundam-content d-flex flex-column align-items-center justify-content-center">
               <div className="bg-red">
                 <h3 className="text-white fs-5 font-weight-bold">Shin Burning Gundam</h3>
-                <p className="fs-6 text-white">Model Number: GF13-017NJII</p>
-                <p className="fs-6 text-white">Pilot: Domon Kasshu</p>
-                <p className="fs-6 text-white">Special Move: Burning Finger</p>
+                <p className="fs-6 text-white">Model Number: SBG-E01</p>
+                <p className="fs-6 text-white">Pilot: Sekai Kamiki</p>
+                <p className="fs-6 text-white">Special Move: Burning Burst</p>
                 <Link to={"/shin-burning"} className="text-color-gundam">
                   Learn More
                 </Link>
@@ -82,7 +81,6 @@ function Home() {
             </div>
           </div>
         </div>
-
         <div className="box">
           <div className="body">
             <div className="imgContainer">
