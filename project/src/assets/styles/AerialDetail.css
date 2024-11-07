@@ -1,0 +1,165 @@
+/* ShineBurningDetail.css */
+
+/* General styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+/* Header styling */
+.aerial header {
+    border-bottom: 2px solid #00be2979;
+}
+
+.aerial .navbar-brand {
+    color: #2b41e9 !important;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.aerial .navbar-nav .nav-link {
+    color: #333 !important;
+    font-weight: 600;
+}
+
+.aerial .navbar-toggler {
+    border-color: #2b41e9;
+}
+
+.aerial .navbar .d-flex a {
+    font-size: 1.25rem;
+    color: #2b41e9;
+}
+
+.aerial .navbar .d-flex a:hover {
+    color: #2b41e9;
+}
+
+.aerial .breadcrumb {
+    background-color: #ffffff;
+    padding: 0.75rem 1rem;
+    border-radius: 0.25rem;
+}
+
+.aerial .breadcrumb-item a {
+    color: #2b41e9;
+}
+
+.aerial .breadcrumb-item a:hover {
+    color: #2b41e9;
+}
+
+/* Product image and info */
+.aerial .img-fluid {
+    max-width: 100%;
+    height: auto;
+    border-radius: 0.25rem;
+    border: 2px solid #00be2979;
+}
+
+.aerial h4 {
+    color: #2b41e9;
+    font-size: 1.75rem;
+}
+
+.aerial h5 {
+    color: #00be2979;
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.aerial p {
+    color: #495057;
+}
+
+.aerial .input-group .btn {
+    font-size: 1rem;
+    color: #333;
+}
+
+.aerial .input-group .btn:hover {
+    color: #2b41e9;
+}
+
+/* Quantity selector styling */
+.aerial .quantity .btn-minus,
+.aerial .quantity .btn-plus {
+    color: #2b41e9;
+    border-color: #2b41e9;
+    background-color: #ffffff;
+    transition: all 0.3s ease;
+}
+
+.aerial .quantity .btn-minus:hover,
+.aerial .quantity .btn-plus:hover {
+    background-color: #2b41e9;
+    color: #ffffff;
+}
+
+/* Add to Cart button */
+.aerial .btn.border-secondary {
+    background-color: #2b41e9;
+    color: #ffffff;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.aerial .btn.border-secondary:hover {
+    background-color: #2b41e9;
+    border-color: #2b41e9;
+}
+
+/* Customer Reviews */
+.aerial .review img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid #00be2979;
+    margin-right: 10px;
+}
+
+.aerial .review strong {
+    color: #333;
+}
+
+.aerial .review p {
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+    color: #6c757d;
+}
+
+.aerial .text-warning {
+    color: #00be2979 !important;
+}
+
+/* Footer styling */
+.aerial footer {
+    background-color: #333;
+    color: #e9ecef;
+}
+
+.aerial footer h4 {
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.aerial footer a {
+    color: #00be2979;
+    text-decoration: none;
+}
+
+.aerial footer a:hover {
+    color: #2b41e9;
+}
+
+.aerial footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    line-height: 1.8;
+}
+
+.aerial footer small {
+    color: #adb5bd;
+}

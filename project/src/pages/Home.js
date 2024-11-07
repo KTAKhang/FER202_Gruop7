@@ -9,7 +9,7 @@ import "../assets/styles/Home.css";
 import img1 from '../assets/images/Home/Shine-Burning.jpg'
 import img2 from '../assets/images/Home/gundam4.png'
 import img3 from '../assets/images/Home/gundam5.png'
-import img4 from '../assets/images/Home/gundam6.png'
+import img4 from '../assets/images/Home/a1.png'
 import img5 from '../assets/images/Home/gundam7.png'
 
 function Home() {
@@ -48,13 +48,14 @@ function Home() {
                 alt=""
               />
             </div>
-            <div className="content kiet-content d-flex flex-column align-items-center justify-content-center">
-              <div className="bg-green">
-                <h3 className="text-white fs-5">Aerial GunDam</h3>
-                <p className="fs-6 text-white">Super GunDam</p>
-                <p className="fs-6 text-white">Premium</p>
-                <Link to={"/aerial"} className="text-kiet">
-                  Detail
+            <div className="content khang-content d-flex flex-column align-items-center justify-content-center">
+              <div className="bg-arial">
+                <h3 className="text-white fs-5">Gundam Aerial</h3>
+                <p className="fs-6 text-white"><strong>Model Number:</strong> XVX-016</p>
+                <p className="fs-6 text-white"><strong>Pilot:</strong> Suletta Mercury</p>
+                <p className="fs-6 text-white"><strong>Special Move:</strong> Permet Score Overload</p>
+                <Link to={"/aerial"} className="text-color-gundam">
+                  Learn More
                 </Link>
               </div>
             </div>

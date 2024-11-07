@@ -13,6 +13,7 @@ import Vinh from '../src/pages/Vinh'
 import Tuananh from "./pages/Tuananh";
 import ThanhDat from "./pages/ThangDat";
 import Aerial from "./pages/Aerial";
+import AerialDetail from "./pages/AerialDetail";
 function App() {
   return (
     <div className="App">
@@ -20,6 +21,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/aerial" element={<Aerial />} />
+        <Route path="/aerial-detail" element={<AerialDetail />} />
         <Route path="/dat" element={<ThanhDat />} />
         <Route path="/lcta" element={<Tuananh />} />
         <Route path="/shin-burning" element={<ShineBurning />} />
