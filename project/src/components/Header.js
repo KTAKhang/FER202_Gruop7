@@ -23,7 +23,7 @@ function Header() {
                     </button>
                     <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
                         <div className="navbar-nav">
-                            <Link className="nav-item nav-link active" to="/lttoan">ToanLT</Link>
+                            <Link className="nav-item nav-link active" to="/Aerial">ToanLT</Link>
                             <Link to="/lcta" className="nav-item nav-link">AnhLCT</Link>
                             <Link to="/tien" className="nav-item nav-link">TienDTC</Link>
                             <Link to="/dat" className="nav-item nav-link">DatNT</Link>
@@ -33,7 +33,7 @@ function Header() {
                 </nav>
             </div>
         </div>
-  );
+    );
 }
 
 export default Header;

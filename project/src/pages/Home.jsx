@@ -50,10 +50,10 @@ function Home() {
             </div>
             <div className="content kiet-content d-flex flex-column align-items-center justify-content-center">
               <div className="bg-green">
-                <h3 className="text-white fs-5">Lưu Trường Toán</h3>
-                <p className="fs-6 text-white">CE172023</p>
-                <p className="fs-6 text-white">Front-end developer</p>
-                <Link to={"/lttoan"} className="text-kiet">
+                <h3 className="text-white fs-5">Aerial GunDam</h3>
+                <p className="fs-6 text-white">Super GunDam</p>
+                <p className="fs-6 text-white">Premium</p>
+                <Link to={"/aerial"} className="text-kiet">
                   Detail
                 </Link>
               </div>
