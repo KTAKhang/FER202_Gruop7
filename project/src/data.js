@@ -1,9 +1,9 @@
 // src/data.js
 
-import anh1 from './assets/images/Tuananh/anh6.jpg';
-import anh2 from './assets/images/Tuananh/anh8.webp';
-import anh3 from './assets/images/Tuananh/anh10.jpg';
-import anh4 from './assets/images/Tuananh/anh10.jpg';
+import anh1 from './assets/images/Nguyen/anh6.jpg';
+import anh2 from './assets/images/Nguyen/anh8.webp';
+import anh3 from './assets/images/Nguyen/anh10.jpg';
+import anh4 from './assets/images/Nguyen/anh10.jpg';
 
 
 export const items = [

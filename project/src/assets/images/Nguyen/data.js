@@ -1,9 +1,9 @@
-import anh1 from "../asset/images/Tuananh/den_hung.jpg"
-import anh2 from "../asset/images/Tuananh/dinh_co_binh_thuy.jpg"
-import anh3 from  "../asset/images/Tuananh/ben_ninh_kieu.jpg"
-import anh4 from "../asset/images/Tuananh/thien_vien_truc_lam.jpg"
-import anh5 from "../asset/images/Tuananh/cho_noi_cai_rang.jpg"
-import anh6 from "../asset/images/Tuananh/du_lich_ong_de.jpg"
+import anh1 from "../asset/images/Nguyen/den_hung.jpg"
+import anh2 from "../asset/images/Nguyen/dinh_co_binh_thuy.jpg"
+import anh3 from  "../asset/images/Nguyen/ben_ninh_kieu.jpg"
+import anh4 from "../asset/images/Nguyen/thien_vien_truc_lam.jpg"
+import anh5 from "../asset/images/Nguyen/cho_noi_cai_rang.jpg"
+import anh6 from "../asset/images/Nguyen/du_lich_ong_de.jpg"
 
 const destinations = [
     {

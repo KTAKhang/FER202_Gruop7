@@ -1,4 +1,4 @@
-/* Các quy tắc cần thiết cho thành phần Tuananh */
+/* Các quy tắc cần thiết cho thành phần */
 
 /* Header */
 #header {
@@ -11,7 +11,7 @@
 #hero-anh {
   width: 100%;
   height: 100vh;
-  background: url("../images/Tuananh/logo.jpg") top right;
+  background: url("../images/Nguyen/logo.jpg") top right;
   background-size: cover;
   position: relative;
 }

@@ -5,13 +5,13 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import * as Icon from "react-bootstrap-icons";
 
-import anh1 from "../assets/images/Tuananh/anh6.jpg"; // Import các hình ảnh
-import anh2 from "../assets/images/Tuananh/anh8.webp";
-import anh3 from "../assets/images/Tuananh/anh10.jpg";
-import anh4 from "../assets/images/Tuananh/anh11.jpg";
+import anh1 from "../assets/images/Nguyen/anh6.jpg"; // Import các hình ảnh
+import anh2 from "../assets/images/Nguyen/anh8.webp";
+import anh3 from "../assets/images/Nguyen/anh10.jpg";
+import anh4 from "../assets/images/Nguyen/anh11.jpg";
 
 
-import "../assets/styles/Tuananh.css";
+import "../assets/styles/Nguyen.css";
 
 const items = [
   {

@@ -10,7 +10,7 @@ import Home from "./pages/Home";
 import TienCV from "./pages/TienCV";
 import Vinh from '../src/pages/Vinh'
 
-import Tuananh from "./pages/Tuananh";
+
 import ThanhDat from "./pages/Nguyen";
 import DetailPage from './components/DetailPage'; // Nhập trang chi tiết
 import Nguyen from "./pages/Nguyen";
