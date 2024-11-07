@@ -24,10 +24,10 @@ function Header() {
                     <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
                         <div className="navbar-nav">
                             <Link className="nav-item nav-link active" to="/aerial">Aerial</Link>
-                            <Link to="/lcta" className="nav-item nav-link">AnhLCT</Link>
+
                             <Link to="/shin-burning" className="nav-item nav-link">Shin Burning</Link>
-                            <Link to="/dat" className="nav-item nav-link">DatNT</Link>
-                            <Link to="/vinh" className="nav-item nav-link">VinhHP</Link>
+
+
                         </div>
                     </div>
                 </nav>
