@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 import "aos/dist/aos.css";
 import "../assets/styles/Home.css";
 
-import img1 from '../assets/images/Home/gundam3.png'
+import img1 from '../assets/images/Home/Shine-Burning.jpg'
 import img2 from '../assets/images/Home/gundam4.png'
 import img3 from '../assets/images/Home/gundam5.png'
 import img4 from '../assets/images/Home/gundam6.png'
@@ -60,28 +60,27 @@ function Home() {
             </div>
           </div>
         </div>
-
         <div className="box">
           <div className="body">
             <div className="imgContainer">
               <img
                 src={img1}
-                alt=""
+                alt="Shin Burning Gundam"
               />
             </div>
-            <div className="content tien-content d-flex flex-column align-items-center justify-content-center">
+            <div className="content gundam-content d-flex flex-column align-items-center justify-content-center">
               <div className="bg-red">
-                <h3 className="text-white fs-5">Danh Thị Cẩm Tiên</h3>
-                <p className="fs-6 text-white">CE171331</p>
-                <p className="fs-6 text-white">Front-end developer</p>
-                <Link to={"/tien"} className="text-color-tien">
-                  Detail
+                <h3 className="text-white fs-5 font-weight-bold">Shin Burning Gundam</h3>
+                <p className="fs-6 text-white">Model Number: SBG-E01</p>
+                <p className="fs-6 text-white">Pilot: Sekai Kamiki</p>
+                <p className="fs-6 text-white">Special Move: Burning Burst</p>
+                <Link to={"/shin-burning"} className="text-color-gundam">
+                  Learn More
                 </Link>
               </div>
             </div>
           </div>
         </div>
-
         <div className="box">
           <div className="body">
             <div className="imgContainer">

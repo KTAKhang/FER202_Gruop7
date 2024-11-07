@@ -1,0 +1,165 @@
+/* ShineBurningDetail.css */
+
+/* General styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+/* Header styling */
+.shine-burning header {
+    border-bottom: 2px solid #f5c242;
+}
+
+.shine-burning .navbar-brand {
+    color: #e63946 !important;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.shine-burning .navbar-nav .nav-link {
+    color: #333 !important;
+    font-weight: 600;
+}
+
+.shine-burning .navbar-toggler {
+    border-color: #e63946;
+}
+
+.shine-burning .navbar .d-flex a {
+    font-size: 1.25rem;
+    color: #e63946;
+}
+
+.shine-burning .navbar .d-flex a:hover {
+    color: #c51b29;
+}
+
+.shine-burning .breadcrumb {
+    background-color: #ffffff;
+    padding: 0.75rem 1rem;
+    border-radius: 0.25rem;
+}
+
+.shine-burning .breadcrumb-item a {
+    color: #e63946;
+}
+
+.shine-burning .breadcrumb-item a:hover {
+    color: #c51b29;
+}
+
+/* Product image and info */
+.shine-burning .img-fluid {
+    max-width: 100%;
+    height: auto;
+    border-radius: 0.25rem;
+    border: 2px solid #f5c242;
+}
+
+.shine-burning h4 {
+    color: #e63946;
+    font-size: 1.75rem;
+}
+
+.shine-burning h5 {
+    color: #f5c242;
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.shine-burning p {
+    color: #495057;
+}
+
+.shine-burning .input-group .btn {
+    font-size: 1rem;
+    color: #333;
+}
+
+.shine-burning .input-group .btn:hover {
+    color: #e63946;
+}
+
+/* Quantity selector styling */
+.shine-burning .quantity .btn-minus,
+.shine-burning .quantity .btn-plus {
+    color: #e63946;
+    border-color: #e63946;
+    background-color: #ffffff;
+    transition: all 0.3s ease;
+}
+
+.shine-burning .quantity .btn-minus:hover,
+.shine-burning .quantity .btn-plus:hover {
+    background-color: #e63946;
+    color: #ffffff;
+}
+
+/* Add to Cart button */
+.shine-burning .btn.border-secondary {
+    background-color: #e63946;
+    color: #ffffff;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.shine-burning .btn.border-secondary:hover {
+    background-color: #c51b29;
+    border-color: #c51b29;
+}
+
+/* Customer Reviews */
+.shine-burning .review img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid #f5c242;
+    margin-right: 10px;
+}
+
+.shine-burning .review strong {
+    color: #333;
+}
+
+.shine-burning .review p {
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+    color: #6c757d;
+}
+
+.shine-burning .text-warning {
+    color: #f5c242 !important;
+}
+
+/* Footer styling */
+.shine-burning footer {
+    background-color: #333;
+    color: #e9ecef;
+}
+
+.shine-burning footer h4 {
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.shine-burning footer a {
+    color: #f5c242;
+    text-decoration: none;
+}
+
+.shine-burning footer a:hover {
+    color: #e63946;
+}
+
+.shine-burning footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    line-height: 1.8;
+}
+
+.shine-burning footer small {
+    color: #adb5bd;
+}
