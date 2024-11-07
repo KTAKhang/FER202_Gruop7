@@ -91,10 +91,10 @@ function Home() {
             </div>
             <div className="content duc-content d-flex flex-column align-items-center justify-content-center">
               <div className="bg-pink">
-                <h3 className="text-white fs-5">Lê Công Tuấn Anh</h3>
-                <p className="fs-6 text-white">CE172067</p>
+                <h3 className="text-white fs-5">Bùi Chí Nguyên</h3>
+                <p className="fs-6 text-white">CE170530</p>
                 <p className="fs-6 text-white">Front-end developer</p>
-                <Link to={"/lcta"} className="text-phuc">
+                <Link to={"/bcn"} className="text-phuc">
                   Detail
                 </Link>
               </div>

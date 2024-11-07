@@ -1,15 +1,8 @@
-.grid {
-  width: 100%;
-  display: block;
-  padding: 0;
-}
-.grid.wide {
-  max-width: 1200px;
-  margin: 0 auto;
-}
+/* Các quy tắc cần thiết cho thành phần */
 
+/* Header */
 #header {
- background-color: #a42828;
+  background-color: #a42828;
 }
 
 /*--------------------------------------------------------------
@@ -18,7 +11,7 @@
 #hero-anh {
   width: 100%;
   height: 100vh;
-  background: url("../images/Tuananh/fantasy-2049567_1280.jpg") top right;
+  background: url("../images/Nguyen/logo.jpg") top right;
   background-size: cover;
   position: relative;
 }
@@ -106,231 +99,6 @@
 body {
   margin: 0;
 }
-.wrapper {
-  background-color: #efebeb;
-  font-family: system-ui;
-  font-size: 14px;
-  padding: 0 34px;
-}
-.wrapper-infomation {
-  display: flex;
-  min-height: 350px;
-}
-.info {
-  height: auto;
-  padding-bottom: 100px;
-}
-.avatar-contact {
-  background-color: black;
-  color: white;
-  padding: 30px 24px;
-  text-align: center;
-  min-width: 255px;
-}
-.i {
-  position: relative;
-  width: 100%;
-  text-align: left;
-}
-.i b {
-  font-weight: bold;
-}
-.i::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: -5px;
-  width: 100%;
-  height: 1px;
-  background-color: rgb(128, 128, 128); /* Màu của border-bottom */
-}
-.wrapper {
-  width: 1000px;
-  max-width: 100%;
-  margin: auto;   
-}
-.avatar-contact img {
-  width: 150px;
-  height: 150px;
-  object-fit: cover;
-  border-radius: 50%;
-  margin-bottom: 30px;;
-}
-.infomation {
-  padding-left: 62px;
-  width: 100%;
-}
-.infomation h1 {
-  font-family: 'Times New Roman', Times, serif;
-  font-size: 46px;
-  font-weight: 600;
-  letter-spacing: 2.5px;
-}
-.infomation .specialize {
-  font-size: 17px;
-  font-weight: 300;
-  text-align: left;
-}
-.target {
-  text-align: center;
-  position: relative;
-  top: 71px;
-  width: 190px;
-  height: auto;
-  background-color: rgb(0, 0, 0);
-  color: white;
-}
-.target h3 {
-  letter-spacing: 4px;
-  margin: 0;
-  padding: 0 2px 2px 2px;
-}
-.target-des {
-  position: relative;
-  top: 78px;
-  font-size: 15px;
-  line-height: 1.4;
-
-}
-
-.Layout-edu-exp {
-  display: flex;    
-}
-.edu-exp {
-  display: flex;
-}
-.edu ,
-.exp {
-  letter-spacing: 4px;
-  margin: 0;
-  display: inline-block;
-  background-color: black;
-  color: white;
-  font-weight: 400;
-}
-.edu {
-  padding: 4px 54px 5px 54px;
-}
-.edu-fpt {
-  margin-top: 16px;
-}
-.edu-fpt h3 {
-  margin: 6px 0;
-}
-.edu-fpt p {
-  margin: 0 3px 8px 3px;
-}
-.edu-coursera {
-  margin-top: 24px;
-}
-.edu-coursera div {
-  padding-left: 6px;
-}
-.edu-coursera h3 {
-  margin: 6px 0;
-}
-.edu-coursera h4 {
-  margin: 6px;
-  font-weight: 400;
-}
-.exp {
-  padding: 4px 54px 5px 54px;
-  margin-left: 29.8%;
-}
-.edu-des{
-  flex:5;
-}
-.exp-des{
-  flex: 5 ;
-  position: relative;
-  padding-left: 36px;
-}
-.exp-des h4 {
-  margin: 69px 0;
-}
-
-.mediul-project {
-  position: absolute;
-}
-.mediul-project-1 {
-  left: -100px;
-  top: 74px;
-}
-
-.mediul-project-2 {
-  left: -100px;
-  top: 200px;
-}
-
-.item-des {
-  padding: 4px 0 0 0;
-}
-.layout-item-des-2 {
-  margin-top: 57px;;
-}
-
-.layout-skill {
-  margin-top: 32px;
-}
-.skill-anh {
-  padding: 4px 54px 5px 54px;
-  letter-spacing: 4px;
-  margin: 0;
-  display: inline-block;
-  background-color: black;
-  color: white;
-  font-weight: 400;
-}
-.layout-skill ul li{
-  margin-bottom: 4px;
-}
-.layout-skill h4 {
-  margin : 8px 0;
-}
-.layout-skill p {
-  margin: 2px;
-}
-
-table {
-  width: 100%;
-  border-collapse: collapse;
-  border: 1px solid #838383;
-}
-
-th, td {
-  padding: 8px;
-  text-align: left;
-  border-bottom: 1px solid #ddd;
-  line-height: 23px;
-}
-
-th {
-  background-color: #f2f2f2;
-  min-width: 100px;
-  min-width: 200px;
-}
-
-tbody tr:nth-child(even) {
-  background-color: #f2f2f2;
-}
-.custom-hr {
-  position: relative;
-  border: none;
-  height: 1.5px; /* Điều chỉnh chiều cao của hr */
-  background-color: black;
-  width: 100%; /* Điều chỉnh chiều rộng của hr */
-  margin: 36px 0 0 0; /* Căn giữa hr */
-}
-.hr::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: -36px;
-  width: 100%;
-  height: 1px;
-  background-color: black;
-}
-
 
 /*--------------------------------------------------------------
 # Contact Me
@@ -483,4 +251,15 @@ tbody tr:nth-child(even) {
   100% {
     transform: rotate(360deg);
   }
+}
+/*__________________________________carousel___________________________________________*/
+#carousel-section {
+  max-width: 100%; /* Đảm bảo carousel không vượt quá chiều rộng của màn hình */
+}
+
+.carousel-item img {
+  width: 100%; /* Đảm bảo hình ảnh chiếm toàn bộ chiều rộng của carousel */
+  height: auto; /* Giữ tỷ lệ hình ảnh gốc */
+  max-height: 80vh; /* Giới hạn chiều cao tối đa (tùy chỉnh giá trị này để phù hợp với layout của bạn) */
+  object-fit: cover; /* Đảm bảo hình ảnh không bị méo */
 }
