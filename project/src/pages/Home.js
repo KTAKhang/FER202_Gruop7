@@ -8,7 +8,7 @@ import "../assets/styles/Home.css";
 
 import img1 from '../assets/images/Home/gundam3.png'
 import img2 from '../assets/images/Home/gundam4.png'
-import img3 from '../assets/images/Home/gundam5.png'
+import img3 from '../assets/images/Home/mg2.jpg'
 import img4 from '../assets/images/Home/gundam6.png'
 import img5 from '../assets/images/Home/gundam7.png'
 
@@ -113,10 +113,10 @@ function Home() {
             </div>
             <div className="content phuc-content d-flex flex-column align-items-center justify-content-center">
               <div className="bg-blue">
-                <h3 className="text-white fs-5">Nguyễn Thành Đạt</h3>
-                <p className="fs-6 text-white">CE172046</p>
-                <p className="fs-6 text-white">Front-end developer</p>
-                <Link to={'/dat'} className='text-phuc'>Detail</Link>
+                <h3 className="text-white fs-5">[HG]Age Two Magnum</h3>
+                <p className="fs-6 text-white">High Grade</p>
+                <p className="fs-6 text-white">500.000 VND</p>
+                <Link to={'/Age2Magnum'} className='text-phuc'>Detail</Link>
               </div>
             </div>
           </div>

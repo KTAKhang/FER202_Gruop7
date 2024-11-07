@@ -26,7 +26,7 @@ function Header() {
                             <Link className="nav-item nav-link active" to="/lttoan">ToanLT</Link>
                             <Link to="/lcta" className="nav-item nav-link">AnhLCT</Link>
                             <Link to="/tien" className="nav-item nav-link">TienDTC</Link>
-                            <Link to="/dat" className="nav-item nav-link">DatNT</Link>
+                            <Link to="/Age2Magnum" className="nav-item nav-link">Age II Magnum</Link>
                             <Link to="/vinh" className="nav-item nav-link">VinhHP</Link>
                         </div>
                     </div>
