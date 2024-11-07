@@ -80,6 +80,28 @@ function Home() {
           </div>
         </div>
 
+        <div className="box">
+          <div className="body">
+            <div className="imgContainer">
+              <img
+                src={img2}
+                alt=""
+              />
+            </div>
+            <div className="content duc-content d-flex flex-column align-items-center justify-content-center">
+              <div className="bg-pink">
+                <h3 className="text-white fs-5">Bùi Chí Nguyên</h3>
+                <p className="fs-6 text-white">CE170530</p>
+                <p className="fs-6 text-white">Front-end developer</p>
+                <Link to={"/bcn"} className="text-phuc">
+                  Detail
+                </Link>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
 
 
 

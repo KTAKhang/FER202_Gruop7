@@ -1,0 +1,88 @@
+/* Căn chỉnh tổng thể */
+.container {
+    max-width: 80%;
+    margin: auto;
+    padding: 20px;
+    background-color: #a39b9b;
+    border-radius: 10px;
+    color: black; /* Đặt màu chữ tổng thể thành đen */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+  }
+  .carousel-section{
+    color: black; /* Đặt màu chữ tổng thể thành đen */
+  }
+  /* Hiệu ứng cho nút "Back" */
+  .btn-secondary {
+    color: #fff;
+    background-color: #6c757d;
+    border: none;
+    padding: 10px 20px;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .btn-secondary:hover {
+    background-color: #5a6268;
+    transform: scale(1.05);
+  }
+  
+  /* Tiêu đề */
+  h1 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+    transition: color 0.3s ease;
+  }
+
+    .tieude {
+    color: #54ed70;
+    margin-bottom: 20px;
+    transition: color 0.3s ease;
+  }
+  .thongtin{
+    font-size: 1.2rem;
+    color: #c7bfbf;
+    margin-bottom: 20px;
+    transition: color 0.3s ease;
+  }
+  h1:hover {
+    color: #555;
+  }
+  
+  /* Hiệu ứng cho ảnh */
+  img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  img:hover {
+    transform: scale(1.02);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Danh sách thành viên */
+  ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin-top: 10px;
+  }
+  
+  ul li {
+    background-color: #9c9595;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    font-weight: bold;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+  }
+  
+  ul li:hover {
+    background-color: #ddd;
+    transform: scale(1.02);
+  }
+  
