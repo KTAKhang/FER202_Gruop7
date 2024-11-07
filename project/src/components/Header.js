@@ -24,6 +24,10 @@ function Header() {
                     <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
                         <div className="navbar-nav">
 
+                            <Link className="nav-item nav-link active" to="/aerial">Aerial</Link>
+
+                            <Link to="/shin-burning" className="nav-item nav-link">Shin Burning</Link>
+
                             <Link className="nav-item nav-link active" to="/lttoan">ToanLT</Link>
                             <Link to="/bcn" className="nav-item nav-link">NguyenBC</Link>
                             <Link to="/tien" className="nav-item nav-link">TienDTC</Link>
@@ -34,6 +38,7 @@ function Header() {
 
                             <Link to="/dat" className="nav-item nav-link">DatNT</Link>
                             <Link to="/vinh" className="nav-item nav-link">VinhHP</Link>
+
                         </div>
                     </div>
                 </nav>

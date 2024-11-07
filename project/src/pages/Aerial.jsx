@@ -51,20 +51,7 @@ function Aerial() {
         window.addEventListener('load', navbarlinksActive);
         onscroll(document, navbarlinksActive);
 
-        // const scrollto = (el) => {
-        //     let header = select('#header');
-        //     let offset = header.offsetHeight;
 
-        //     if (!header.classList.contains('header-scrolled')) {
-        //         offset -= 20;
-        //     }
-
-        //     let elementPos = select(el).offsetTop;
-        //     window.scrollTo({
-        //         top: elementPos - offset,
-        //         behavior: 'smooth'
-        //     });
-        // };
 
         let selectHeader = select('#header');
         if (selectHeader) {
@@ -105,7 +92,7 @@ function Aerial() {
     });
 
     return (
-        <div>
+        <div className='bg-haha'>
             <header id="header" className="fixed-top d-flex justify-content-center align-items-center header-transparent">
                 <nav id="navbar" className="navbar">
                     <ul>
@@ -299,6 +286,11 @@ function Aerial() {
 
                                 <div className="row">
                                     <img src={Banner6} className="d-block w-100 h-100" alt="..." />
+                                </div>
+                                {/* Button to navigate to the shop */}
+                                <div className="text-center mt-3">
+                                    <a href="/aerial-detail" className="btn btn-primary">View Aerial Gundam In Shop</a>
+                                    {/* Thay `/shop` bằng đường dẫn thực tế của trang shop */}
                                 </div>
 
                             </div>
