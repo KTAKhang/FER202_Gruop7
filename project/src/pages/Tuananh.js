@@ -1,12 +1,61 @@
 import React, { useEffect } from "react";
+import { Carousel } from "react-bootstrap"; // Import Carousel từ react-bootstrap
+import { useNavigate } from "react-router-dom"; // Import useNavigate
 import AOS from "aos";
-
-import * as Icon from "react-bootstrap-icons";
 import "aos/dist/aos.css";
-import avt from "../assets/images/Tuananh/avt.jpg";
+import * as Icon from "react-bootstrap-icons";
+
+import anh1 from "../assets/images/Tuananh/anh6.jpg"; // Import các hình ảnh
+import anh2 from "../assets/images/Tuananh/anh8.webp";
+import anh3 from "../assets/images/Tuananh/anh10.jpg";
+import anh4 from "../assets/images/Tuananh/anh11.jpg";
+
+
 import "../assets/styles/Tuananh.css";
 
+const items = [
+  {
+    "id": 1,
+    "name": "Earth Federation (Liên bang Địa Cầu)",
+    "origin": "Mobile Suit Gundam (Universal Century)",
+    "description": "Earth Federation là tổ chức chính phủ lớn trên Trái Đất, chịu trách nhiệm quản lý các thuộc địa không gian và bảo vệ an ninh cho toàn bộ nhân loại. Liên bang thường được mô tả là chính quyền chính thống, mặc dù cũng có những mặt tối như tham nhũng và bất công trong hệ thống quản lý. Trong bối cảnh của Universal Century, Liên bang phải đối mặt với nhiều thách thức từ các phe phái độc lập, đặc biệt là Principality of Zeon, những người đòi quyền tự trị cho các thuộc địa không gian. Qua các cuộc chiến như One Year War, Liên bang đã phát triển các dòng Mobile Suit riêng để đối đầu với Zeon, nổi bật nhất là RX-78-2 Gundam, biểu tượng của sức mạnh và sự kiên định của Liên bang. Tuy nhiên, bên cạnh mục tiêu duy trì hòa bình, Liên bang Địa Cầu cũng bộc lộ mặt tối khi các lãnh đạo thường mưu cầu quyền lực cá nhân, khiến tổ chức này trở thành một trong những phe phức tạp và gây nhiều tranh cãi trong series Gundam.",
+    "image": anh1,
+    "rating": 5
+  },
+  {
+    "id": 2,
+    "name": "Principality of Zeon (Cộng hòa Zeon)",
+    "origin": "Mobile Suit Gundam (Universal Century)",
+    "description": "Principality of Zeon, thường gọi là Zeon, là một phe phái tách ra từ các thuộc địa không gian Side 3, do gia tộc Zabi lãnh đạo. Zeon xuất hiện như là lực lượng cách mạng đòi độc lập khỏi Liên bang Địa Cầu. Họ tin vào hệ tư tưởng của Zeon Zum Deikun, người tin rằng nhân loại sẽ phát triển tốt hơn khi sống trong không gian. Zeon ban đầu kêu gọi quyền tự trị cho các cư dân không gian nhưng sau đó bị biến tướng dưới sự lãnh đạo của gia tộc Zabi thành một chế độ độc tài quân sự. Trong cuộc chiến One Year War, Zeon đã sử dụng công nghệ Mobile Suit để gây sức ép và tấn công Liên bang, mở ra kỷ nguyên của các trận chiến giữa các cỗ máy khổng lồ như Zaku II. Dù Zeon thua cuộc trong nhiều trận chiến quan trọng, tàn dư của Zeon vẫn tiếp tục chiến đấu cho lý tưởng tự do, dẫn đến sự ra đời của Neo Zeon và các phong trào kháng chiến khác. Zeon đại diện cho lý tưởng tự do, nhưng cũng là cảnh báo về sự độc tài và lòng tham quyền lực, làm nên một hình ảnh đối lập rõ rệt với Earth Federation.",
+    "image": anh2,
+    "rating": 5
+  },
+  {
+    "id": 3,
+    "name": "ZAFT",
+    "origin": "Mobile Suit Gundam SEED (Cosmic Era)",
+    "description": "ZAFT (Zodiac Alliance of Freedom Treaty) là tổ chức quân sự của các thuộc địa không gian PLANT, nơi sinh sống của Coordinators - những con người có DNA đã được chỉnh sửa để cải thiện các kỹ năng và trí thông minh. ZAFT ra đời với mục tiêu bảo vệ quyền lợi của các Coordinators trước sự kỳ thị và áp bức từ Liên minh Trái Đất. Cuộc chiến giữa ZAFT và Liên minh Trái Đất bùng phát sau nhiều sự kiện căng thẳng, bao gồm các vụ tấn công và sự phân biệt đối xử. Được trang bị các Mobile Suit tiên tiến như Gundam Seed và Freedom Gundam, ZAFT không ngừng chiến đấu vì tự do và quyền tự quyết. Tuy nhiên, nội bộ ZAFT cũng tồn tại các mâu thuẫn và đấu tranh quyền lực, dẫn đến nhiều tranh cãi và xung đột giữa các lãnh đạo của tổ chức này. ZAFT không chỉ là biểu tượng của sự tiến bộ công nghệ mà còn là lời nhắc nhở về sự đấu tranh cho công bằng và quyền lợi cá nhân trong một xã hội đầy bất công.",
+    "image": anh3,
+    "rating": 4
+  },
+  {
+    "id": 4,
+    "name": "Celestial Being",
+    "origin": "Mobile Suit Gundam 00 (Anno Domini)",
+    "description": "Celestial Being là một tổ chức tư nhân bí mật được thành lập với mục tiêu chấm dứt tất cả các cuộc chiến tranh trên toàn cầu. Được tài trợ và lãnh đạo bởi Aeolia Schenberg, một nhà khoa học lỗi lạc, Celestial Being tin rằng chỉ có thể đạt được hòa bình thực sự khi loại bỏ được các xung đột quân sự. Với các Mobile Suit Gundam mạnh mẽ và những phi công tài giỏi gọi là Gundam Meisters, Celestial Being can thiệp vào các cuộc xung đột và đánh bại những ai gây chiến. Tổ chức này tuân thủ triệt để lý tưởng của mình, nhưng không ngừng đối mặt với các chỉ trích từ phía chính phủ và người dân vì cách tiếp cận cực đoan. Celestial Being có sự tổ chức chặt chẽ, sử dụng công nghệ GN Drive độc quyền cho các Gundam của mình, giúp họ có thể hoạt động lâu dài mà không cần tiếp nhiên liệu. Tuy nhiên, sự tồn tại của Celestial Being cũng đặt ra câu hỏi về việc liệu hòa bình ép buộc có thực sự bền vững và có thể mang lại tự do thực sự hay không.",
+    "image": anh4,
+    "rating": 5
+  },
+
+];
+
 function Tuananh() {
+  const navigate = useNavigate(); // Khai báo useNavigate
+
+  const handleCarouselClick = (id) => {
+    navigate(`/detail/${id}`); // Điều hướng đến trang chi tiết với id
+  };
+
   useEffect(() => {
     const select = (el, all = false) => {
       el = el.trim();
@@ -87,7 +136,7 @@ function Tuananh() {
     };
   }, []);
 
-  //AOS animation libary
+  // AOS animation library
   AOS.init({
     disable: false,
     startEvent: "DOMContentLoaded",
@@ -108,6 +157,7 @@ function Tuananh() {
 
   return (
     <div>
+      {/* Header */}
       <header
         id="header"
         className="fixed-top d-flex justify-content-center align-items-center header-transparent"
@@ -120,25 +170,16 @@ function Tuananh() {
               </a>
             </li>
             <li>
-              <a className="nav-link scrollto" href="#tuananh">
-                Tuananh
+              <a className="nav-link scrollto" href="">
+               Chi Nguyen
               </a>
             </li>
             <li>
-              <a className="nav-link scrollto" href="#about">
+              <a className="nav-link scrollto" href="#carousel-section">
                 About
               </a>
             </li>
-            <li>
-              <a className="nav-link scrollto" href="#resume">
-                Resume
-              </a>
-            </li>
-            <li>
-              <a className="nav-link scrollto" href="#project">
-                Project
-              </a>
-            </li>
+            
             <li>
               <a className="nav-link scrollto" href="#contact">
                 Contact
@@ -149,212 +190,47 @@ function Tuananh() {
         </nav>
       </header>
 
+      {/* Hero Section */}
       <section id="hero-anh">
         <div
           className="hero-anh-container"
           data-aos="fade-up"
           data-aos-duration="3000"
         >
-          <h1>Lê Công Tuấn Anh</h1>
-          <h2>I'm an Intern Front-end developer</h2>
+          <h1>Bui Chi Nguyen</h1>
+          <h2>I am the master of Gundam</h2>
           <a href="#about" className="btn-scroll scrollto" title="Scroll Down">
             <i className="bx bx-chevron-down"></i>
           </a>
         </div>
       </section>
 
-      <div className="wrapper grid grid wide">
-        <div className="wrapper-infomation" id="about">
-          <div className="avatar-contact">
-            <img src={avt} alt="Avatar" />
-            <p className="i">
-              <b>E</b> : anhlctce172067@fpt.edu.vn
-            </p>
-            <p className="i">
-              <b>P</b> : 0388083281
-            </p>
-            <p className="i">
-              <b>D</b> : 10/09/2003
-            </p>
-            <p className="i">
-              <b>A</b> : Vinh Long, Vietnam
-            </p>
-          </div>
-          <div className="infomation">
-            <div style={{ position: "relative" }} className="hr">
-              <h1>Lê Công Tuấn Anh</h1>
-              <div className="specialize">
-                <i>Front-End Developer</i>
-              </div>
-              <div className="target">
-                <h3 style={{ fontWeight: 400 }}>OBJECTIVE</h3>
-              </div>
-            </div>
-            <div className="target-des">
-              Through this internship opportunity, I hope to learn a lot from the company's
-              employees, further enhance my knowledge, and effectively apply what I have
-              learned to the job. I hope that the knowledge and experience gained during the
-              internship can help build a strong foundation for myself and contribute to the
-              company, as well as learn more in the field of Information Technology.
-            </div>
-          </div>
-        </div>
-        <div className="info" id="resume">
-          <hr className="custom-hr" />
-          <div className="edu-exp">
-            <div className="edu">EDUCATION</div>
-            <div className="exp" style={{ marginLeft: "27.9%" }}>
-              Language
+      {/* Carousel Section */}
+      <section id="carousel-section" className="my-5">
+        <Carousel>
+          {items.map(item => (
+            <Carousel.Item key={item.id} onClick={() => handleCarouselClick(item.id)}>
+              <img
+                src={item.image}
+                className="d-block w-100"
+                alt={item.name}
+                style={{ height: "500px", objectFit: "cover" }}
+              />
+              <Carousel.Caption>
+                <h3>{item.name}</h3>
+                <p>{item.description}</p>
+              </Carousel.Caption>
+            </Carousel.Item>
+          ))}
+        </Carousel>
+      </section>
 
-            </div> <br />
-
-          </div>
-          <div className="Layout-edu-exp">
-            <div className="edu-des">
-              <div className="edu-fpt">
-                <h3> FPT UNIVERSITY </h3>
-                <p>Software Engineering</p>
-                <p> 2021-2025 </p>
-              </div>
-              <div className="edu-coursera">
-                <h3>COURSERA</h3>
-                <i>
-                  <h4>Certificate :</h4>
-                </i>
-                <i>
-                  <div>
-                    - Computer Communications(8, 2023) <br />
-                    - Software Development Lifecycle (4, 2024) <br />
-                    - Academic Skills for University Success (8, 2022)<br />
-                    - Web Design for Everybody: Basics of Web Development & Coding (11/2023)<br />
-                  </div>
-                </i>
-
-              </div>
-              <div className="layout-skill">
-
-                <i>
-                  <p>
-                    <b style={{ fontWeight: 500 }}>Summer2022</b> : English
-                    certificate- Level 6- Summit 2
-                  </p>
-                  <p>Ability to read English documents, basic communication</p>
-                </i>
-              </div>
-              <div className="layout-skill">
-                <div className="skill-anh">Activities</div>
-                <h4>2021-2023</h4>
-                <i>
-                  <p>
-                    - Actively participated in conferences organized by the
-                    school
-                  </p>
-                  <p>
-                    - Actively participated in all valid party activities
-                    organized by the school party cell
-                  </p>
-
-                </i>
-              </div>
-            </div>
-            <div className="exp-des">
-
-
-
-              <div className="item-des">
-                <div className="layout-skill">
-                  <h3>English</h3>
-                  <div
-                    className="skill-anh"
-                    style={{ marginTop: 37.5, fontSize: 14 }}
-                  >
-                    Skills
-                  </div>
-                  <h3>Programming</h3>
-                  <i>
-                    <ul>
-                      <li>
-                        Proficient in Reactjs, HTML5/CSS3, JavaScript, and
-                        Responsive Design
-                      </li>
-
-                      <li>
-                        Knowledgeable in Java, C, C++, JavaScript programming
-                      </li>
-                      <li>Basic Git usage</li>
-                      <li>
-                        Ability to customize code without depending on external
-                        libr/aries
-                      </li>
-                      <li>Strong logical thinking skills</li>
-                      <li>Ability to work in a team</li>
-                    </ul>
-                  </i>
-                  <h3>Research, Self-learning</h3>
-                  <i>
-                    <ul>
-                      <li>
-                        Ability to self-learn and quickly adapt to new
-                        technologies.
-                      </li>
-                    </ul>
-                  </i>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="Project" id="project">
-            <div className="custom-hr"></div>
-            <div className="skill-anh">Projects</div>
-            <div className="project-table">
-              <div className="project-title">
-                <h4>Food Store Management Website</h4>
-                <p className="time">4/2024 - 7/2024</p>
-              </div>
-              <table border="1">
-                <tbody>
-                  <tr>
-                    <th>Project Name</th>
-                    <td style={{ fontWeight: 500 }}>Food Store Management Website</td>
-                  </tr>
-                  <tr>
-                    <th>Project Description</th>
-                    <td>
-                      - Full online food sales system
-                      Functions such as: Search, Sort, Filter products by
-                      name, type, product pagination, cart usage
-                      cookies and sessions. <br />
-                      - Applying the MVC model to the project <br />- Source code: ...
-                    </td>
-                  </tr>
-                  <tr>
-                    <th>Number of Team Members</th>
-                    <td>5</td>
-                  </tr>
-                  <tr>
-                    <th>Position</th>
-                    <td>Menber</td>
-                  </tr>
-                  <tr>
-                    <th>Role in the Project</th>
-                    <td>Full-stack developer</td>
-                  </tr>
-                  <tr>
-                    <th>Technologies Used</th>
-                    <td>Java Web, HTML, CSS, JavaScript, SQL Server</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-
-          </div>
-        </div>
-      </div>
+      {/* Contact Section */}
       <section id="contact" className="contact">
         <div className="container">
           <div className="section-title">
             <span>Contact Me</span>
-            <h2>Contact Me</h2>
+            <h2></h2>
             <p>
               Sit sint consectetur velit quisquam cupiditate impedit suscipit
               alias
@@ -462,9 +338,11 @@ function Tuananh() {
           </div>
         </div>
       </section>
+
+      {/* Footer */}
       <footer id="footer">
         <div className="container">
-          <h3>Le Cong Tuan Anh</h3>
+          <h3>Bui Chi Nguyen</h3>
           <p>As one as wind and cloud </p>
           <div className="social-links">
             <a href="#" className="twitter">

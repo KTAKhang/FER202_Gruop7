@@ -9,8 +9,11 @@ import Home from "./pages/Home";
 
 import TienCV from "./pages/TienCV";
 import Vinh from '../src/pages/Vinh'
+
 import Tuananh from "./pages/Tuananh";
-import ThanhDat from "./pages/ThangDat";
+import ThanhDat from "./pages/Nguyen";
+import DetailPage from './components/DetailPage'; // Nhập trang chi tiết
+import Nguyen from "./pages/Nguyen";
 function App() {
   return (
     <div className="App">
@@ -19,9 +22,10 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/lttoan" element={<LTToan />} />
         <Route path="/dat" element={<ThanhDat />} />
-        <Route path="/lcta" element={<Tuananh />} />
+        <Route path="/bcn" element={<Nguyen />} />
         <Route path="/tien" element={<TienCV />} />
         <Route path="/vinh" element={<Vinh />} />
+        <Route path="/detail/:id" element={<DetailPage />} /> {/* Định nghĩa route cho trang chi tiết */}
       </Routes>
     </div>
   );
