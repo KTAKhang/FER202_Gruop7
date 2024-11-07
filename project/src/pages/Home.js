@@ -10,7 +10,7 @@ import img1 from '../assets/images/Home/gundam3.png'
 import img2 from '../assets/images/Home/gundam4.png'
 import img3 from '../assets/images/Home/gundam5.png'
 import img4 from '../assets/images/Home/gundam6.png'
-import img5 from '../assets/images/Home/gundam7.png'
+import image5 from '../assets/images/Home/image.png'
 
 function Home() {
 
@@ -125,14 +125,15 @@ function Home() {
         <div className="box">
           <div className="body">
             <div className="imgContainer">
-              <img src={img5} alt="" />
+              <img src={image5} alt="" />
             </div>
             <div className="content sang-content d-flex flex-column align-items-center justify-content-center">
+
               <div>
-                <h3 className="text-white fs-5">Hồng Phước Vinh</h3>
-                <p className="fs-6 text-white">CE181415</p>
-                <p className="fs-6 text-white">Front-end developer</p>
-                <Link to={'/vinh'} className='text-sang'>Detail</Link>
+                <h3 className="text-white fs-5 font-weight-bold">Unicorn Gundam</h3>
+                <p className="fs-6 text-white">Model Number: RG 25</p>
+                <p className="fs-6 text-white">Special Move: Destroy Mode</p>
+                <Link to={'/UnicornGundam'} className='text-sang'>Learn More</Link>
               </div>
             </div>
           </div>

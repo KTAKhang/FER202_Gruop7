@@ -27,13 +27,13 @@ function Header() {
                             <Link to="/lcta" className="nav-item nav-link">AnhLCT</Link>
                             <Link to="/tien" className="nav-item nav-link">TienDTC</Link>
                             <Link to="/dat" className="nav-item nav-link">DatNT</Link>
-                            <Link to="/vinh" className="nav-item nav-link">VinhHP</Link>
+                            <Link to="/UnicornGundam" className="nav-item nav-link">UnicornGundam</Link>
                         </div>
                     </div>
                 </nav>
             </div>
         </div>
-  );
+    );
 }
 
 export default Header;

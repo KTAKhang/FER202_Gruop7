@@ -1,0 +1,230 @@
+/* Cấu trúc chung của trang */
+.body-unicorngundam {
+    font-family: system-ui, sans-serif;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+/* Cấu trúc container của trang */
+.unicorngundam-container {
+    background-color: #E9E7EA;
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 40px 50px;
+    box-shadow: 0 10px 50px rgba(133, 133, 133, 0.4);
+    display: grid;
+    grid-template-columns: 35% 60%;
+    column-gap: 5%;
+    row-gap: 30px;
+    padding-bottom: 4.6rem;
+}
+
+/* Avatar của Unicorn Gundam */
+.unicorngundam-avatar img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Tên và tiêu đề của Unicorn Gundam */
+.unicorngundam-name h1 {
+    font-size: 2.5rem;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+/* Liên kết mạng xã hội */
+.unicorngundam-contact li {
+    margin: 15px 0;
+    display: flex;
+    align-items: center;
+}
+
+.unicorngundam-contact li span {
+    font-size: 1.6rem;
+    width: 25px;
+    margin-right: 10px;
+}
+
+/* Thông tin chi tiết của Unicorn Gundam */
+.unicorngundam-info {
+    color: #333;
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
+
+/* Đánh giá sản phẩm */
+.reviews {
+    color: #d9534f;
+    font-size: 1.1rem;
+}
+
+/* Phần hiển thị giá cả */
+.price-section {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.original-price {
+    text-decoration: line-through;
+    color: #888;
+}
+
+.discounted-price {
+    font-weight: bold;
+    color: #333;
+    font-size: 1.4rem;
+}
+
+.discount-tag {
+    background-color: #d9534f;
+    color: white;
+    padding: 3px 10px;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+/* Tùy chọn mua hàng */
+.buy-options {
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.quantity-input {
+    width: 70px;
+    padding: 8px;
+    font-size: 1.2rem;
+    text-align: center;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.buy-now-button {
+    background-color: #d9534f;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease;
+}
+
+.buy-now-button:hover {
+    background-color: #c9302c;
+}
+
+.rating-section {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.comments-section {
+    margin: 20px 0;
+}
+
+.comment-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.comment-input {
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 1em;
+}
+
+.comment-submit-button {
+    padding: 10px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.comments-list .comment {
+    background-color: #f9f9f9;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+
+/* Section contact */
+.contact {
+    background-color: #f9f9f9;
+    padding: 40px 0;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.section-title span {
+    font-size: 1.2rem;
+    color: #777;
+}
+
+.section-title h2 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin: 15px 0;
+}
+
+.section-title p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+/* Các liên kết mạng xã hội */
+.social-links a {
+    font-size: 2rem;
+    margin: 0 15px;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #d9534f;
+}
+
+/* Footer */
+#footer {
+    background-color: #333;
+    color: #fff;
+    padding: 30px 0;
+    text-align: center;
+}
+
+#footer h3 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+#footer .social-links a {
+    font-size: 1.5rem;
+    color: #fff;
+    margin: 0 10px;
+}
+
+#footer .social-links a:hover {
+    color: #d9534f;
+}
+
+#footer .credits {
+    font-size: 1rem;
+    margin-top: 10px;
+}
+
+#footer .credits a {
+    color: #fff;
+    text-decoration: none;
+}
