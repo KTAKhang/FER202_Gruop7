@@ -7,6 +7,7 @@ import "aos/dist/aos.css";
 import "../assets/styles/Home.css";
 import img1 from '../assets/images/Home/Shine-Burning.jpg'
 import img4 from '../assets/images/Home/a1.png'
+import img2 from '../assets/images/Home/a1.png'
 
 
 function Home() {

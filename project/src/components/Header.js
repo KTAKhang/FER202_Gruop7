@@ -32,8 +32,7 @@ function Header() {
                             <Link to="/bcn" className="nav-item nav-link">NguyenBC</Link>
                             <Link to="/tien" className="nav-item nav-link">TienDTC</Link>
 
-                            <Link className="nav-item nav-link active" to="/Aerial">ToanLT</Link>
-                            <Link to="/lcta" className="nav-item nav-link">AnhLCT</Link>
+
                             <Link to="/shin-burning" className="nav-item nav-link">Shin Burning</Link>
 
                             <Link to="/dat" className="nav-item nav-link">DatNT</Link>
