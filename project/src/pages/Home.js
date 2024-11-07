@@ -114,9 +114,10 @@ function Home() {
             <div className="content phuc-content d-flex flex-column align-items-center justify-content-center">
               <div className="bg-blue">
                 <h3 className="text-white fs-5">[HG]Age Two Magnum</h3>
-                <p className="fs-6 text-white">High Grade</p>
-                <p className="fs-6 text-white">500.000 VND</p>
-                <Link to={'/Age2Magnum'} className='text-phuc'>Detail</Link>
+                <p className="fs-6 text-white">Model: Custom Transformable Super-Offensive Mobile Suit</p>
+                <p className="fs-6 text-white">Pilot: Kyoya Kujo</p>
+                <p className="fs-6 text-white">Special Move: EX CALIBER</p>
+                <Link to={'/Age2Magnum'} className='text-age2'>LEARN MORE</Link>
               </div>
             </div>
           </div>

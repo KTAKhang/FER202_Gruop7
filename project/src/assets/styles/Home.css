@@ -126,7 +126,7 @@ body {
 }
 
 .container .box .body .content .bg-blue {
-    background: linear-gradient(45deg, #0968e5, #091970) !important;
+    background: linear-gradient(45deg, #78abee, #ade020) !important;
 }
 
 .container .box .body .content .bg-pink {
@@ -145,8 +145,8 @@ body {
     color: #f9bc2c;
 }
 
-.text-phuc {
-    color: #fff;
+.text-age2 {
+    color: #7525c0;
     text-decoration: underline;
 }
 

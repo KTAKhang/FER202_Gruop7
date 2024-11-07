@@ -29,7 +29,7 @@ function Age2Magnum() {
     modelNumber: " Based on the AGE-2 Gundam AGE-2 Normal",
     manufacturer: "Kyoya Kujo",
     pilot: "Kyoya Kujo",
-    affiliation: "Avalon Coalition of Volunteers",
+    affiliation: "Avalon and Coalition of Volunteers",
     features: [
       "Advanced martial arts capabilities",
       "Powered by Plavsky Particles for enhanced performance",
@@ -107,6 +107,7 @@ function Age2Magnum() {
                 <li><span>Orginal Model</span> {gundamInfo.modelNumber}</li>
                 <li><span>Manufacturer</span> {gundamInfo.manufacturer}</li>
                 <li><span>Pilot</span> {gundamInfo.pilot}</li>
+                <p><a href="https://gundam.fandom.com/wiki/Kyoya_Kisugi" target="_blank" rel="noopener noreferrer">Know more about Kyoya Kujo</a></p>
                 <li><span>Affiliation</span> {gundamInfo.affiliation}</li>
               </ul>
             </div>
