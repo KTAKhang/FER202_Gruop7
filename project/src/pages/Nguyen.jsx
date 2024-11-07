@@ -32,7 +32,7 @@ const items = [
   },
   {
     "id": 3,
-    "name": "ZAFT",
+    "name": "ZAFT (Quân Đònn Phản Vật Chất",
     "origin": "Mobile Suit Gundam SEED (Cosmic Era)",
     "description": "ZAFT (Zodiac Alliance of Freedom Treaty) là tổ chức quân sự của các thuộc địa không gian PLANT, nơi sinh sống của Coordinators - những con người có DNA đã được chỉnh sửa để cải thiện các kỹ năng và trí thông minh. ZAFT ra đời với mục tiêu bảo vệ quyền lợi của các Coordinators trước sự kỳ thị và áp bức từ Liên minh Trái Đất. Cuộc chiến giữa ZAFT và Liên minh Trái Đất bùng phát sau nhiều sự kiện căng thẳng, bao gồm các vụ tấn công và sự phân biệt đối xử. Được trang bị các Mobile Suit tiên tiến như Gundam Seed và Freedom Gundam, ZAFT không ngừng chiến đấu vì tự do và quyền tự quyết. Tuy nhiên, nội bộ ZAFT cũng tồn tại các mâu thuẫn và đấu tranh quyền lực, dẫn đến nhiều tranh cãi và xung đột giữa các lãnh đạo của tổ chức này. ZAFT không chỉ là biểu tượng của sự tiến bộ công nghệ mà còn là lời nhắc nhở về sự đấu tranh cho công bằng và quyền lợi cá nhân trong một xã hội đầy bất công.",
     "image": anh3,
@@ -40,7 +40,7 @@ const items = [
   },
   {
     "id": 4,
-    "name": "Celestial Being",
+    "name": "Celestial Being (Dế Quốc Anno Domini)",
     "origin": "Mobile Suit Gundam 00 (Anno Domini)",
     "description": "Celestial Being là một tổ chức tư nhân bí mật được thành lập với mục tiêu chấm dứt tất cả các cuộc chiến tranh trên toàn cầu. Được tài trợ và lãnh đạo bởi Aeolia Schenberg, một nhà khoa học lỗi lạc, Celestial Being tin rằng chỉ có thể đạt được hòa bình thực sự khi loại bỏ được các xung đột quân sự. Với các Mobile Suit Gundam mạnh mẽ và những phi công tài giỏi gọi là Gundam Meisters, Celestial Being can thiệp vào các cuộc xung đột và đánh bại những ai gây chiến. Tổ chức này tuân thủ triệt để lý tưởng của mình, nhưng không ngừng đối mặt với các chỉ trích từ phía chính phủ và người dân vì cách tiếp cận cực đoan. Celestial Being có sự tổ chức chặt chẽ, sử dụng công nghệ GN Drive độc quyền cho các Gundam của mình, giúp họ có thể hoạt động lâu dài mà không cần tiếp nhiên liệu. Tuy nhiên, sự tồn tại của Celestial Being cũng đặt ra câu hỏi về việc liệu hòa bình ép buộc có thực sự bền vững và có thể mang lại tự do thực sự hay không.",
     "image": anh4,
